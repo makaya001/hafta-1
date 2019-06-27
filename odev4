@@ -1,0 +1,22 @@
+x=3
+print('Lutfen 1-10 arasinda bir sayi giriniz.')
+tahmin=int(input('Bir tahminde bulunun :'))
+if 0>tahmin or tahmin>10 :
+    print('Lutfen 1-10 arasinda bir sayi girin')
+elif tahmin==3 :
+    print('Tebrikler uc yildiz kazandiniz.')
+elif tahmin==1 or tahmin==2 or tahmin==4 or tahmin==5\
+     or tahmin==6 or tahmin==7 or tahmin==8 or \
+     tahmin==9 or tahmin==10 :
+    print('Lutfen tekrar deneyin')
+elif  tahmin==3 :
+    print('Tebrikler iki yildiz kazandiniz.')
+elif tahmin==1 or tahmin==2 or tahmin==4 or tahmin==5\
+     or tahmin==6 or tahmin==7 or tahmin==8 or \
+     tahmin==9 or tahmin==10 :
+    print('Lutfen tekrar deneyin')
+elif  tahmin==3 :
+    print('Tebrikler bir yildiz kazandiniz.')
+else :
+    print('Malasef hic yildiz kazanamadiniz')
+    
