@@ -1,0 +1,27 @@
+vize1=float(input('Lutfen 1. vize notunuzu girin :'))
+vize2=float(input('Lutfen 2. vize notunuzu girin :'))
+final=float(input('Lutfen final notunuzu girin :'))
+toplamnot=(vize1*0.3+vize2*0.3+final*0.4)
+if vize1>=101 or vize2>=101 or final>=101 or vize1<0\
+   or vize2<0 or final<0 :
+    print('Lutfen notunuzu 0-100 arasinda giriniz!')
+if  toplamnot >=90 :
+    print('Harf notunuz AA')
+elif  toplamnot >=85 :
+    print('Harf notunuz BA')
+elif  toplamnot >=80 :
+    print('Harf notunuz BB')
+elif  toplamnot >= 75 :
+    print('Harf notunuz CB')
+elif toplamnot >= 70 :
+    print('Harf notunuz CC')
+elif  toplamnot >= 65 :
+    print('Harf notunuz DC')
+elif  toplamnot >= 60:
+    print('Harf notunuz DD')
+elif  toplamnot >= 55 :
+    print('Harf notunuz FD')
+elif toplamnot < 55 :
+    print('Harf notunuz FF')
+else :
+    print('Lutfen gecerli bi not yaziniz!')
