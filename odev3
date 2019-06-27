@@ -1,0 +1,22 @@
+dosya=open('userid.txt','w')
+print('Lutfen 3-18 karakter arasinda kullanici adi belirleyin!')
+username=input('Lutfen bir kullanici adi giriniz :')
+if '1' in username or '2'in username or '3'in username or '4'in username\
+   or '5'in username or '6' in username or '7' in username or '8'\
+   '9'in username or '0' in username:
+    print('Lutfen kullanici adinda sayi kullanmayin!')
+elif len(username)<3 or len(username)>18 :
+    print('3-18 karakter arsinda bi kullanici adi olusturunuz!')
+else :
+    print('Bir kullanici adi olusturdunuz.')
+
+print('Lutfen 6-12 karakter arasinda parola belirleyiniz!')
+pasword=input('Lutfen parolanizi giriniz : ')
+if 6<=len(pasword)<=12 :
+    print('Parolaniz basariyla olusturuldu.')
+else :
+    print('Parolanizi 6-12 karakter arasinda giriniz!')
+print( 'Kullanici adiniz :', username,'\n', 'Parolaniz :',pasword,file=dosya)
+input()
+dosya.close()
+
