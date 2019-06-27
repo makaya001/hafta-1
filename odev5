@@ -1,0 +1,15 @@
+print('Bakiye kontrolu islemi icin 1\'e\n\
+Para cekme islemi icin 2\'ye\n\
+Para yatirma islemi icin 3\'e basiniz')        
+islem=input('Lutfen yapmak istediginiz islemi seciniz :')
+bakiye=1000
+if islem=='1' :
+    print('Bakiyenizde 1000 € bulunmaktadir.')
+elif islem=='2':
+    x=float(input('Lutfen cekmek istediginiz miktari girin'))
+    print('Bakiyenizde :',bakiye-x,'€ kalmistir.')
+elif islem=='3' :
+    y=float(input('Lutfen yatirmak istediginiz miktari giriniz :'))
+    print('Guncel bakiyeniz',bakiye+y,"€'dir")
+else :
+    print('Lutfen tekrar deneyin')
