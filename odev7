@@ -1,0 +1,30 @@
+tip=input('Lutfen belirlemek istediginiz geometrik\
+sekli seciniz,ucgen icin 1\'e dortgen icin 2\'ye')
+if tip=='1' :
+    x=float(input('Lutfen 1. kenar uzunlugunu yaziniz.'))
+    y=float(input('Lutfen 2. kenar uzunlugunu yaziniz.'))
+    z=float(input('Lutfen 3. kenar uzunlugunu yaziniz.'))
+    if ( abs(x+y) > z and abs(z+x) > y and abs(y+z) > x) :
+         if x==y==z :
+            print('Ucgeniniz eskenar ucgen.')
+         elif x==y or y==z or x==z :
+            print('Ucgeniniz ikizkenar ucgen.')
+         else :
+            print('Ucgeniniz cesitkenar bir ucgen.')
+    else:
+        print('Ucgen olusturulamadi!')
+elif tip=='2':
+    a=float(input('Lutfen dortgeniz 1. kenar uzunlugunuz giriniz :'))
+    b=float(input('lutfen dortgenin 2. kenar uzunlugunu giriniz ;'))
+    c=float(input('Lutfen dortgenin 3. kenar uzunlugunu giriniz :'))
+    d=float(input('Lutfen dortgenin 4. kenar uzunlugunu giriniz :'))
+    if a==b==c==d :
+        print('Dortgeniniz karedir.')
+    elif a==b or a==c or a==d :
+        print('Dortgeniniz dikdortgendir')
+    elif b==c or b==d or c==d :
+        print('Dortgeniniz dikdortgendir')
+    else :
+         print('Dortgeniniz bir yamuktur.')
+else :
+    print('Bir hata olustu lutfen tekrar deneyiniz!')
