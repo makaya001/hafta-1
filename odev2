@@ -1,0 +1,11 @@
+deger=float(input('Lutfen donustumek istediginiz mesafeyi girin: '))
+mil=1.609344
+km=0.621371192
+a=(deger*km)
+b=(deger*mil)
+birim=input("Km'yi mil'e cevirmek icin 1'e basin,\n\
+Mil'i km'ye cevirmek icin 2'ye basiniz.")
+if 1 :
+    print('Sonuc :',b)
+elif 2 :
+    print('Sonuc ;', a)
