@@ -1,0 +1,31 @@
+ay=input('Lutfen dogdugunuz ayin ismini yaziniz :')
+gun=int(input('Lutfen dogum gununuzu yaziniz :'))
+
+if ay=='mart' and 19<gun<32 or ay=='nisan' and 0<gun<20 :
+    print('Burcunuz Koc')
+elif ay=='nisan' and 19<gun<31 or ay=='mayis' and 0<gun<21 :
+    print('Burcunuz Boga')
+elif ay=='mayis' and 20<gun<32 or ay=='haziran' and 0<gun<22 :
+    print('Burcunuz Ikizler')
+elif ay=='haziran' and 21<gun<31 or ay=='temmuz' and 0<gun<23 :
+    print('Burcunuz Yengec')
+elif ay=='temmuz' and 22<gun<32 or ay=='agustos' and 0<gun<23 :
+    print('Burcunuz Aslan')
+elif ay=='agustos' and 22<gun<32 or ay=='eylul' and 0<gun<23 :
+    print('Burcunuz Basak')
+elif ay=='eylul' and 22<gun<31 or ay=='ekim' and 0<gun<23 :
+    print('Burcunuz Terazi')
+elif ay=='ekim' and 23<gun<32 or ay=='kasim' and 0<gun<22 :
+    print('Burcunuz Akrep')
+elif ay=='kasim' and 21<gun<31 or ay=='aralik' and 0<gun<22 :
+    print('Burcunuz Yay')
+elif ay=='aralik' and 21<gun<31 or ay=='ocak' and 0<gun<20 :
+    print('Burcunuz Oglak')
+elif ay=='ocak' and 19<gun<31 or ay=='subat' and 0<gun<19 :
+    print('Burcunuz Kova')
+elif ay=='subat' and 19<gun<30 or ay=='mart' and 0<gun<20 :
+    print('Burcunuz Balik')
+else :
+    print('Bir hata olustu lutfen tekrar deneyin')
+
+
